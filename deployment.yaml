@@ -20,3 +20,10 @@ spec:
         image: dyldug/test_app:latest
         ports:
         - containerPort: 9000
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+          limits:
+            cpu: "500m"
+            memory: "256Mi"
